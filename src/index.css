@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom Neon Violet & Charcoal Grey Palette */
+  --color-charcoal-pure: #09090b;
+  --color-charcoal-dark: #121214;
+  --color-charcoal-medium: #1a1a1f;
+  --color-charcoal-light: #26262b;
+  --color-charcoal-border: #32323a;
+  
+  --color-neon-violet: #8b5cf6;
+  --color-neon-violet-light: #a78bfa;
+  --color-neon-pink: #d946ef;
+  --color-neon-pink-light: #f472b6;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-charcoal-pure);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-charcoal-light);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neon-violet);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #09090b;
+  color: #f4f4f5;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
